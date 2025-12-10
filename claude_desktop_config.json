@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "duffel-travels": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/mcp-duffel-travels/build/index.js"
+      ],
+      "env": {
+        "DUFFEL_API_KEY": "duffel_test_your_api_key_here"
+      }
+    }
+  }
+}
