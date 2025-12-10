@@ -4,8 +4,13 @@
   "description": "MCP Server for Flight traveling and booking using Duffel API",
   "type": "module",
   "bin": {
-    "mcp-duffel-travels": "./build/index.js"
+    "mcp-duffel-travels": "./dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
@@ -28,6 +33,9 @@
     "url": "https://github.com/modellers/mcp-duffel-travels/issues"
   },
   "homepage": "https://github.com/modellers/mcp-duffel-travels#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "@duffel/api": "^2.0.0"
