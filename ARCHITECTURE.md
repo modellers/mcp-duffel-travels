@@ -12,17 +12,17 @@ Provides real-time flight inventory search, pricing validation, and booking tran
 ## MCP Tools (7 total)
 
 ### Search & Pricing
-- `duffel_create_offer_request` - Search bookable flight offers with live airline pricing
-- `duffel_list_offers` - Retrieve paginated offers with sorting
+- `flight_create_offer_request` - Search bookable flight offers with live airline pricing
+- `flight_list_offers` - Retrieve paginated offers with sorting
 
 ### Pre-Booking
-- `booking_validate_or_price_offer` - Validate offer still available at quoted price
-- `booking_list_services_and_seatmaps` - Get seat maps, baggage, meals, ancillaries
+- `flight_booking_validate_or_price_offer` - Validate offer still available at quoted price
+- `flight_booking_list_services_and_seatmaps` - Get seat maps, baggage, meals, ancillaries
 
 ### Booking & Payment
-- `booking_create_order` - Create airline reservation (instant or hold)
-- `booking_pay_for_order` - Complete payment for hold reservations
-- `booking_get_order_status` - Check order status and retrieve e-tickets
+- `flight_booking_create_order` - Create airline reservation (instant or hold)
+- `flight_booking_pay_for_order` - Complete payment for hold reservations
+- `flight_booking_get_order_status` - Check order status and retrieve e-tickets
 
 ## Information Flow
 1. Search offers → Get offer_id
