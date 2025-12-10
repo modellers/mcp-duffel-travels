@@ -1,0 +1,47 @@
+{
+  "name": "@taskingagency/mcp-duffel-travels",
+  "version": "1.0.0",
+  "description": "MCP Server for Flight traveling and booking using Duffel API",
+  "type": "module",
+  "bin": {
+    "mcp-duffel-travels": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "duffel",
+    "flights",
+    "travel",
+    "booking"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modellers/mcp-duffel-travels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/modellers/mcp-duffel-travels/issues"
+  },
+  "homepage": "https://github.com/modellers/mcp-duffel-travels#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@duffel/api": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}
